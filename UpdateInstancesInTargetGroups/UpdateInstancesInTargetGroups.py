@@ -4,7 +4,7 @@ import boto3
 import sys
 import string
 session = boto3.session.Session(profile_name='alpha_gov_prod')
-elb_name = "arn:aws-us-gov:elasticloadbalancing:us-gov-west-1:367780343923:loadbalancer/app/green-tipms-cipp-pilot-mdc-lb-tf/adea379c2776bbe2"
+elb_name = "****"
 client = session.client('elbv2')
 
 response = client.describe_target_groups(
